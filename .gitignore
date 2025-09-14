@@ -1,0 +1,56 @@
+# Carpetas de compilación y temporales
+**/bin/
+**/bin/**
+**/obj/
+**/obj/**
+**/Debug/
+**/Release/
+.vs/
+.vs/**
+
+# Archivos de configuración y usuario
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.vspscc
+*.vssscc
+*.cache
+*.log
+*.tmp
+
+# Archivos de publicación
+*.Publish.xml
+*.pubxml
+*.pdb
+
+# Archivos de configuración de IIS Express
+*.config
+*.dbmdl
+*.dbproj
+*.mdf
+*.ldf
+
+# Archivos de Web.config transformados
+web.*.config
+
+# Archivos de dependencias NuGet
+project.lock.json
+project.fragment.lock.json
+*.nupkg
+*.nuspec
+
+# Archivos de Rider o Visual Studio Code
+.idea/
+.vscode/
+
+# Archivos de entorno local
+.env
+*.local.json
+
+# Entity Framework: migraciones y base de datos local
+Migrations/
+*.sqlite
+*.sqlite3
+*.db
+*.bak
