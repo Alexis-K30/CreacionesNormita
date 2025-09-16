@@ -23,6 +23,12 @@ namespace CreacionesNormita.Controllers
             return View();
         }
 
+        //vista admin (ejemplo no funcional)
+        public IActionResult Admin()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
