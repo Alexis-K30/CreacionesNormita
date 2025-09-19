@@ -1,6 +1,11 @@
 ﻿/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
-
+@font-face {
+  font-family: 'MetaOldFrench';
+  src: url('Fonts/Meta-old-French.otf') format('opentype'); 
+  font-weight: normal;
+  font-style: normal;
+}
 a.navbar-brand {
   white-space: normal;
   text-align: center;
@@ -41,8 +46,64 @@ button.accept-policy {
 
 .footer {
   position: absolute;
+  background: #e6d6f5;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
   bottom: 0;
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
+  font-family: 'MetaOldFrench', serif;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 25px;
+}
+
+.footer nav {
+  display: flex;
+  gap: 20px;
+}
+
+.footer nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.footer nav a i {
+  margin-right: 6px;
+}
+
+.footer nav a:hover {
+  color: #FFD700;
+}
+
+.footer .social-icons {
+  margin-top: 8px;
+  display: flex;
+  gap: 25px;
+}
+
+.footer .social-icons a {
+  color: #fff;
+  font-size: 28px;
+  transition: 0.3s;
+}
+
+.footer .social-icons a:hover {
+  color: #FFD700;
+  transform: scale(1.2);
 }
