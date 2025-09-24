@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CreacionesNormita")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+acee81729d185ba43a825750e4817213ceb883a9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f4eacf0439d9794b73832cf3791b53ad93f7f985")]
 [assembly: System.Reflection.AssemblyProductAttribute("CreacionesNormita")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CreacionesNormita")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
