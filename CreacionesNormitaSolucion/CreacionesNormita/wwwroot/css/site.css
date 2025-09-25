@@ -1,22 +1,88 @@
-html {
-  font-size: 14px;
+/* --- NAVBAR --- */
+header {
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+    padding: 10px 20px;
 }
 
-@media (min-width: 768px) {
-  html {
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000; /* negro */
+    font-size: 18px;
+}
+
+    .logo:hover {
+        color: #000; /* sin cambio en hover */
+    }
+
+.logo-circle {
+    width: 28px;
+    height: 28px;
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+/* Menú */
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
     font-size: 16px;
-  }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    nav a:hover,
+    nav a.active {
+        color: #000;
+        font-weight: bold;
+    }
+
+/* Social en navbar */
+.social a {
+    text-decoration: none;
+    color: #000; /* negro */
+    margin-left: 15px;
+    font-weight: 500;
+    font-size: 16px;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+    .social a:hover {
+        color: #000; /* no cambia */
+    }
+/* --- FOOTER --- */
+.footer {
+    background: #f9f9f9;
+    border-top: 1px solid #ddd;
+    padding: 15px 0;
+    position: fixed; /* fijo abajo */
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
-body {
-  margin-bottom: 60px;
+.container-footer {
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
 }
+
+    .container-footer p {
+        margin: 0;
+        color: #333;
+        font-size: 14px;
+    }
