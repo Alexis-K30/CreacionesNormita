@@ -1,0 +1,38 @@
+﻿@model CotizacionWeb.Models.DressViewModel
+
+@{
+    ViewData["Title"] = "Detalles del Vestido";
+}
+
+<link rel="stylesheet" href="~/css/site.css" />
+
+<div class="text-center">
+    <h1 class="display-4">@Model.Name</h1>
+</div>
+
+<div class="dress-details">
+    <img src="@Model.ImageUrl" alt="@Model.Name" />
+    <div class="info">
+        <h2>@Model.Name</h2>
+        <p class="price">$@Model.Price</p>
+        <p>@Model.Description</p>
+        <a class="details-btn" href="@Url.Action("Index", "Home")">Volver al catálogo</a>
+        <button class="details-btn" onclick="document.getElementById('modal').style.display='flex'">Cotizar producto</button>
+    </div>
+</div>
+
+<!-- Modal de Cotización -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <h3>Cotizar producto</h3>
+        <input type="text" placeholder="Nombre completo" />
+        <input type="text" placeholder="Correo" />
+        <input type="text" placeholder="Teléfono" />
+        <textarea placeholder="Mensaje (Talla, color, fecha del evento...)"></textarea>
+        <div style="text-align: right;">
+            <button onclick="document.getElementById('modal').style.display='none'">Cancelar</button>
+            <button>Enviar y abrir WhatsApp</button>
+        </div>
+        <p>Al enviar, guardaremos tus solicitudes y abriremos WhatsApp con el mensaje prellenado.</p>
+    </div>
+</div>

@@ -1,4 +1,4 @@
-namespace CreacionesNormita.Models
+namespace CotizacionWeb.Models
 {
     public class ErrorViewModel
     {
